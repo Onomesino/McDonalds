@@ -1,0 +1,26 @@
+.Deals_Bur{
+    width: 45rem;
+    height: 20rem;
+    margin-top: 7rem;
+    margin-left: 3rem;
+}
+.Deals_print{
+    margin-top: 8rem;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-left: -5rem;
+}
+.Deals_sml{
+    margin-left: -5rem;
+    font-size: x-small;
+}
+p{
+    margin-left: -5rem;
+}
+.Deals_butom{
+    height: 3rem;
+    width: 10.6em;
+    margin-top: 1.5em;
+    margin-left: -5em;
+    border-radius: 0.2em;
+}

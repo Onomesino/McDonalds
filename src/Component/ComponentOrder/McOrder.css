@@ -1,0 +1,26 @@
+.Order_Bur{
+    width: 45rem;
+    height: 20rem;
+    margin-top: 7rem;
+    margin-left: 3rem;
+}
+.Order_print{
+    margin-top: 8rem;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-left: -5rem;
+}
+.Order_sml{
+    margin-left: -5rem;
+    font-size: x-small;
+}
+.butom{
+    width: 13em;
+    height: 3em;
+    margin-left: -5em;
+    border-radius: 0.2em;
+    margin-top: 2em;
+}
+p{
+    margin-left: -5rem;
+}
