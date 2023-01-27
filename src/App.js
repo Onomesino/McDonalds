@@ -7,6 +7,7 @@ import McFreeFries from "./Component/ComponentFries/McFreeFries";
 import McOrder from "./Component/ComponentOrder/McOrder";
 import McStraight from "./Component/ComponentStraight/McStraight";
 import McYourStory from "./Component/ComponentStory/McYourStory";
+import McFooter from "./Component/ComponentFooter/McFooter";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <McDonald />
       <McOrder />
       <McDeals />
+      <McFooter />
     </>
   );
 }
