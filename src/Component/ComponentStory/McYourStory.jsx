@@ -20,7 +20,7 @@ function McYourStory() {
                 <br />
                 Hispanic community McDonald’s wants to help
                 <br />
-                change that. With <span>Spotlight Dorado</span>,McDonald’s is
+                change that. With <span className="span">Spotlight Dorado</span>,McDonald’s is
                 <br />
                 giving aspiring Latino filmmakers a chance to
                 <br />

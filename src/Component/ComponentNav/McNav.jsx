@@ -1,5 +1,7 @@
 import React from "react";
 import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import McEmail from "../ComponentEmail/McEmail";
 import "./Mc.css";
 
 function mcNav() {
@@ -7,28 +9,20 @@ function mcNav() {
     <>
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">
-            <img src="./Logo.jpeg" alt="Logo" />
+          <Navbar.Brand href="#Home">
+            <img src="./Logo.jpeg" alt="Logo" id="logo" />
           </Navbar.Brand>
 
           <Navbar.Collapse id="basic-navbar-nav" className="Navv">
             <Nav className="me-auto">
               <NavDropdown title="language" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Español</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#home" className="menn">
-                Sign Up for Email
-              </Nav.Link>
+
+              <Link to="/McEmail" className="menn">
+                <Nav.Link>Sign Up for Email</Nav.Link>
+              </Link>
 
               <Nav.Link href="#link" className="menn">
                 Careers

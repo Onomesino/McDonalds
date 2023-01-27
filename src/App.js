@@ -8,12 +8,13 @@ import McOrder from "./Component/ComponentOrder/McOrder";
 import McStraight from "./Component/ComponentStraight/McStraight";
 import McYourStory from "./Component/ComponentStory/McYourStory";
 import McFooter from "./Component/ComponentFooter/McFooter";
-
+import Router from "./Routing/Router";
+import McEmail from "./Component/ComponentEmail/McEmail";
 
 function App() {
   return (
     <>
-      <McNav />
+      <Router />
       <McStraight />
       <McFreeFries />
       <McYourStory />
