@@ -1,21 +1,21 @@
 import React from "react";
-import { Routes, Route, BrowserRouter, Link } from "react-router-dom";
 import McEmail from "../Component/ComponentEmail/McEmail";
-import McNav from "../Component/ComponentNav/McNav";
+import {
+  BrowserRouter as AppRouter,
+  Routes,
+  Route,
+  Link,
+} from "react-router-dom";
 
-const Router = () => {
+function Router() {
   return (
-    <div>
-      <BrowserRouter>
-        <Link to="/" className="nav"></Link>
-        <Link to="/email" className="email"></Link>
-        <Routes>
-          <Route path="/" element={<McNav />} />
-          <Route path="/email" element={<McEmail />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <AppRouter>
+      <Link to="/McNav" className="McNav"></Link>
+      <Routes>
+        <Route path="/" element={<McEmail />} />
+      </Routes>
+    </AppRouter>
   );
-};
+}
 
 export default Router;

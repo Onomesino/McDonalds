@@ -1,7 +1,5 @@
 import React from "react";
 import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import McEmail from "../ComponentEmail/McEmail";
 import "./Mc.css";
 
 function mcNav() {
@@ -20,9 +18,9 @@ function mcNav() {
                 <NavDropdown.Item href="#action/3.2">Español</NavDropdown.Item>
               </NavDropdown>
 
-              <Link to="/McEmail" className="menn">
-                <Nav.Link>Sign Up for Email</Nav.Link>
-              </Link>
+              <Nav.Link href="/McEmail" className="menn">
+                Sign Up for Email
+              </Nav.Link>
 
               <Nav.Link href="#link" className="menn">
                 Careers
