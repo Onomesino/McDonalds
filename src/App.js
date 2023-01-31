@@ -1,29 +1,12 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import McNav from "./Component/ComponentNav/McNav";
-import McDeals from "./Component/ComponentDeals/McDeals";
-import McDonald from "./Component/CompoentMcDonalds/McDonald";
-import McFreeFries from "./Component/ComponentFries/McFreeFries";
-import McOrder from "./Component/ComponentOrder/McOrder";
-import McStraight from "./Component/ComponentStraight/McStraight";
-import McYourStory from "./Component/ComponentStory/McYourStory";
-import McFooter from "./Component/ComponentFooter/McFooter";
-import McEmail from "./Component/ComponentEmail/McEmail";
+import React from 'react'
+import Home from './Component/OrderComponent/Home'
 
 function App() {
   return (
-    <>
-      <McNav />
-      <McStraight />
-      <McFreeFries />
-      <McYourStory />
-      <McDonald />
-      <McOrder />
-      <McDeals />
-      <McFooter /> 
-      <McEmail />
-    </>
-  );
+    <div>
+      <Home />
+    </div>
+  )
 }
 
-export default App;
+export default App

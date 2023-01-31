@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
+//import { Link } from "react-router-dom";
 import "./Mc.css";
 
 function mcNav() {
@@ -7,8 +8,8 @@ function mcNav() {
     <>
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#Home">
-            <img src="./Logo.jpeg" alt="Logo" id="logo" />
+          <Navbar.Brand href="/McNav">
+            <img src="./Logo.jpeg" alt="Logo" />
           </Navbar.Brand>
 
           <Navbar.Collapse id="basic-navbar-nav" className="Navv">
@@ -22,14 +23,14 @@ function mcNav() {
                 Sign Up for Email
               </Nav.Link>
 
-              <Nav.Link href="#link" className="menn">
+              <Nav.Link href="/McCareers" className="menn">
                 Careers
               </Nav.Link>
 
-              <Navbar.Brand href="#search">
+              <Navbar.Brand href="/McSearch">
                 <img src="./Search.png" alt="" className="SSS" />
               </Navbar.Brand>
-              <Nav.Link href="#home" className="me">
+              <Nav.Link href="/McSearch" className="me">
                 Search
               </Nav.Link>
               <Navbar.Brand href="#location">
@@ -44,7 +45,7 @@ function mcNav() {
               >
                 Change Your Location
               </a>
-              <Button variant="warning" className="Butt">
+              <Button href="./Order" variant="warning" className="Butt">
                 Order Now
               </Button>
             </Nav>
@@ -61,19 +62,37 @@ function mcNav() {
                 title="Our Menu"
                 id="basic-nav-dropdown"
               >
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
+                <div className="container menu-container">
+                  <div className="row">
+                    <div className="col-md-4">
+                      <div className="row dropdown-img">
+                      <div className="col-md-6">
+                        <img src="./breakfast.jpeg" alt="" />
+                      </div>
+                      <div className="col-md-6" id="BF">Breakfast</div>
+                      </div>
+                    </div>
+                    <div className="col-md-4">hi</div>
+                    <div className="col-md-4">hi</div>
+                  </div>
+
+                  <div className="row">
+                    <div className="col-md-4">hi</div>
+                    <div className="col-md-4">hi</div>
+                    <div className="col-md-4">hi</div>
+                  </div>
+
+                  <div className="row">
+                    <div className="col-md-4">hi</div>
+                    <div className="col-md-4">hi</div>
+                    <div className="col-md-4">hi</div>
+                  </div>
+                </div>
               </NavDropdown>
-              <Nav.Link href="#home" className="men">
+              <Nav.Link
+                href="https://www.mcdonalds.com/us/en-us/download-app.html"
+                className="men"
+              >
                 Download App
               </Nav.Link>
               <Nav.Link href="#link" className="men">

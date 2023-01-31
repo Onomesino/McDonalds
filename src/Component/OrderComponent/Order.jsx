@@ -1,23 +1,17 @@
-import React from "react";
-import {
-  Nav,
-  NavDropdown,
-  Navbar,
-  Container,
-  Button,
-  Form,
-} from "react-bootstrap";
-import "./McEmail.css"
+import React from 'react';
+import {Form, Button, Nav, NavDropdown, Navbar, Container} from "react-bootstrap"
+import "./Order.css"
 
-function McEmail() {
-  return (
-    <div>
-      <Navbar bg="light" expand="lg">
+const Order = () => {
+    return (
+        <div>
+
+<Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="#Home">
-            <img src="./Logo.jpeg" alt="Logo" />
+          <Navbar.Brand href="/McNav">
+            <img src="./Logo.jpeg" alt="Logo"/>
           </Navbar.Brand>
-
+        
           <Navbar.Collapse id="basic-navbar-nav" className="Navv">
             <Nav className="me-auto">
               <NavDropdown title="language" id="basic-nav-dropdown">
@@ -51,7 +45,7 @@ function McEmail() {
               >
                 Change Your Location
               </a>
-              <Button href="/Order" variant="warning" className="Butt">
+              <Button href="./Order" variant="warning" className="Butt">
                 Order Now
               </Button>
             </Nav>
@@ -80,7 +74,7 @@ function McEmail() {
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#home" className="men">
+              <Nav.Link href="https://www.mcdonalds.com/us/en-us/download-app.html" className="men">
                 Download App
               </Nav.Link>
               <Nav.Link href="#link" className="men">
@@ -103,49 +97,52 @@ function McEmail() {
         </Container>
       </Navbar>
 
-      <div>
-        <h1>McDonald’s Email Signup</h1>
-        <h2>Sign Up</h2>
-        <p id="para">
-          Be in the know about deals, MyMcDonald's Rewards, news and more by
-          signing up for emails.
-        </p>
-        
-        <Form>
+          <h1>
+            McDonalds Delicasy
+          </h1>
+          <p className='pa'>
+            Order whatever you wish for. We are here for you.  
+          </p>
+         <Form className="fom">  {/* onSubmit={this.handleSubmit} */}
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>*Indicates a required field</Form.Label>
-            <Form.Control type="email" placeholder="*Email" className="input"/>
+            <Form.Label>Name</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Enter Name"
+              name="name"
+              // value={this.state.name}
+              // onChange={this.handleChange}
+            />
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label>Phone Number</Form.Label>
+            <Form.Control
+              type="number"
+              placeholder="phone number"
+              name="phone number"
+              // value={this.state.email}
+              // onChange={this.handleChange}
+            />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Control type="numbers" placeholder="* Zip Code"   className="input"/>
+            <Form.Label>Location</Form.Label>
+            <Form.Control
+              type="string"
+              placeholder="Location"
+              name="location"
+              // value={this.state.gen}
+              // onChange={this.handleChange}
+            />
           </Form.Group>
 
-          <p className="para-o-para">
-            *By selecting "Sign Up," you agree to the McDonald's{" "}
-            <a href="https://www.mcdonalds.com/us/en-us/privacy.html">
-              {" "}
-              Privacy Policy
-            </a>
-            and{" "}
-            <a href="https://www.mcdonalds.com/us/en-us/terms-and-conditions.html">
-              Terms & Conditions.
-            </a>{" "}
-            <a href="https://www.mcdonalds.com/us/en-us/subscription.html">
-              Unsubscribe from<br/>emails
-            </a>{" "}
-            any time. Please note when unsubscribing: it may take up to 10
-            business days for your request to take effect.
-          </p>
-
-          <Button variant="warning" type="sign up" className="Button">
-            Sign Up
+          <Button variant="warning" type="submit">
+            Order
           </Button>
         </Form>
-        
       </div>
-    </div>
-  );
+    );
 }
 
-export default McEmail;
+export default Order;
