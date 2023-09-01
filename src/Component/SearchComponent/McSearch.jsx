@@ -1,17 +1,17 @@
 import React from "react";
-import { Navbar, Container, Nav, NavDropdown, Button } from "react-bootstrap";
+import { Navbar, Container, Nav, NavDropdown, Button, Form } from "react-bootstrap";
 //import { Link } from "react-router-dom";
 import "./McSearch.css";
 
 function McSearch() {
   return (
-    <>
+    <div>
       <Navbar bg="light" expand="lg">
         <Container>
           <Navbar.Brand href="/McNav">
-            <img src="./Logo.jpeg" alt="Logo"/>
+            <img src="./Logo.jpeg" alt="Logo" />
           </Navbar.Brand>
-        
+
           <Navbar.Collapse id="basic-navbar-nav" className="Navv">
             <Nav className="me-auto">
               <NavDropdown title="language" id="basic-nav-dropdown">
@@ -74,7 +74,10 @@ function McSearch() {
                   Separated link
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="https://www.mcdonalds.com/us/en-us/download-app.html" className="men">
+              <Nav.Link
+                href="https://www.mcdonalds.com/us/en-us/download-app.html"
+                className="men"
+              >
                 Download App
               </Nav.Link>
               <Nav.Link href="#link" className="men">
@@ -96,7 +99,19 @@ function McSearch() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>
+      <Form>
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Name</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Enter Name"
+            name="name"
+            // value={this.state.name}
+            // onChange={this.handleChange}
+          />
+        </Form.Group>
+      </Form>
+    </div>
   );
 }
 

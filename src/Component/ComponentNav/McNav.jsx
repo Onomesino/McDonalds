@@ -8,7 +8,7 @@ function mcNav() {
     <>
       <Navbar bg="light" expand="lg">
         <Container>
-          <Navbar.Brand href="/McNav">
+          <Navbar.Brand href="/">
             <img src="./Logo.jpeg" alt="Logo" />
           </Navbar.Brand>
 
@@ -45,7 +45,7 @@ function mcNav() {
               >
                 Change Your Location
               </a>
-              <Button href="./Order" variant="warning" className="Butt">
+              <Button href="./Orders" variant="warning" className="Butt">
                 Order Now
               </Button>
             </Nav>

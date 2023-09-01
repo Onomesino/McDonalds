@@ -1,12 +1,16 @@
-import React from 'react'
-import Home from './Component/OrderComponent/Home'
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Router from "./Routing/Router";
+import './App.css'
+
 
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
-  )
+    <>
+      <Router />
+    
+    </>
+  );
 }
 
-export default App
+export default App;
